@@ -1,0 +1,53 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+.bkg-image {
+    background-image: url('pexels-josh-sorenson-995301.jpg');
+    background-size: cover;
+    z-index: -1;
+}
+
+/* ELSE */
+.keys {
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+}
+
+.key {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border: solid 3px black;
+    padding: 10px;
+    color: rgba(235, 204, 31, 0.822);
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    width: 8rem;
+    transition: all 0.08s ease;
+}
+
+kbd {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+
+.sound {
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* TRANSITION */
+.playing {
+    transform: scale(1.1);
+    border: solid 3px rgba(235, 204, 31, 0.822);
+    background-color: black;
+}
